@@ -11,12 +11,19 @@
 .menuButton, .mobileLinks {
     display: none;
 }
-
+.menuImg {
+    cursor: pointer;
+    display: none;
+}
 @media (max-width: 768px) {
     .links {
         display: none;
     }
     .menuButton {
+        display: block;
+        cursor: pointer;
+    }
+    .menuImg {
         display: block;
         cursor: pointer;
     }
@@ -26,11 +33,12 @@
         right: 2px;
         width: 50%;
         height: calc(100vh - 100px);
-        background-color: var(--bg);
+        background-color: purple;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border: 1px solid gray;
         gap: 10px;
     }
 }
